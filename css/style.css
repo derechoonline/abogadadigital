@@ -327,3 +327,66 @@ footer {
 .seccion-quien-soy .texto {
   opacity: 1 !important;
 }
+/* Para que el contenido no quede angosto */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 10px; /* un poco de espacio a los lados */
+  box-sizing: border-box;
+}
+
+/* Para que las imágenes no se desborden */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* --- Ajustes generales para móviles --- */
+
+/* Asegura que el contenido use todo el ancho disponible */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* evita scroll horizontal */
+}
+
+/* Contenedores */
+.container, main, section {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 10px; /* margen lateral mínimo */
+  box-sizing: border-box;
+}
+
+/* Imágenes adaptables */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ajuste de tipografía en pantallas pequeñas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Si tu banner o imagen principal es muy grande */
+  .banner, .hero img {
+    width: 100%;
+    height: auto;
+  }
+}
