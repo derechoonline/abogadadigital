@@ -338,24 +338,4 @@
     <p>&copy; 2025 - Derecho Online</p>
   </footer>
 
-  <script src="js/script.js"></>
-</body>
-</html>
 
-<link rel="stylesheet" href="css/estilo-web-abogada-programadora.css">
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const section = document.querySelector(".seccion-quien-soy");
-
-  function checkScroll() {
-    const rect = section.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      section.classList.add("show");
-      window.removeEventListener("scroll", checkScroll);
-    }
-  }
-
-  window.addEventListener("scroll", checkScroll);
-  checkScroll();
-});
-</script>

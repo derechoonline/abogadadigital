@@ -692,3 +692,7 @@ html {
   animation: slideInRight 1s ease forwards;
   animation-delay: 0.3s; /* un poquito después de la imagen */
 }
+.seccion-quien-soy {
+  opacity: 1 !important;
+  transform: none !important;
+}
