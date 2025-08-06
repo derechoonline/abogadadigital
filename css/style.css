@@ -680,23 +680,9 @@ html {
 /* Estado inicial */
 .seccion-quien-soy .imagen,
 .seccion-quien-soy .texto {
-  opacity: 0;
+  opacity: 1;
 }
-
-/* Cuando la sección esté visible */
-.seccion-quien-soy.show .imagen {
-  animation: slideInLeft 1s ease forwards;
-}
-
-.seccion-quien-soy.show .texto {
-  animation: slideInRight 1s ease forwards;
-  animation-delay: 0.3s; /* un poquito después de la imagen */
-}
-.seccion-quien-soy {
+.seccion-quien-soy .imagen,
+.seccion-quien-soy .texto {
   opacity: 1 !important;
-  transform: none !important;
-}
-.seccion-quien-soy {
-  opacity: 1 !important;
-  transform: none !important;
 }
